@@ -1,0 +1,17 @@
+node_modules/
+dist/
+tmp/
+
+# Secrets — never commit these
+.env
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!jest.config.json
+!data/store.json
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

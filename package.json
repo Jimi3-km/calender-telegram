@@ -1,0 +1,32 @@
+{
+  "name": "calendar-telegram",
+  "version": "1.0.0",
+  "description": "Sends upcoming Google Calendar events to a Telegram chat via the Bot API.",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --max-old-space-size=4096 node_modules/jest/bin/jest.js --passWithNoTests",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "croner": "^8.1.1",
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.7",
+    "ts-jest": "^29.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
