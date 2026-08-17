@@ -1,6 +1,6 @@
 # Implementation Notes
 
-A few implementation choices were made to keep the service simple and suitable for a small deployment.
+I made these implementation choices to keep the service simple and suitable for a small deployment.
 
 - **Google Service Account authentication** is used instead of interactive OAuth. The service runs as a background process, so a Service Account avoids interactive login and token management. The target calendar only needs to be shared with the Service Account.
 
